@@ -1,0 +1,54 @@
+<a href=register.html>REGISTER</a>|
+
+<table border="0">
+<tr> <th colspan="2"><b>REGISTRATION FORM<b></th></tr>
+<tr> <td>User ID</td>   <td><input id=userid></td></tr>
+<tr> <td>Password</td>  <td><input type="password" id=password></td></tr>
+<tr> <td>Email ID</td>  <td><input id=email></td></tr>
+<tr> <td>Address</td>   <td><input id=add></td></tr>
+<tr> <td>Contact No</td><td><input id=contact></td></tr>
+<tr> <td>Date of Birth</td><td><input type="date" id=date></td></tr>
+<tr> <td>Country</td><td><select id=country>
+  <option>India</option>
+  <option>Nepal</option>
+  <option>Canada</option>
+  <option>Bangladesh</option>
+  <option>Bhutan</option>
+</select></td></tr>
+<tr> <td>Religion</td><td><select id=rel>
+   <option>Hindu</option>
+   <option>Christian</option>
+   <option>Muslim</option>
+   <option>Sikh</option>
+</select></td></tr>
+<tr><td></td><td><input type="button" value="Register" onclick="show()"/></td></tr>
+</table>
+<p id="p1"></p>
+
+
+<script>
+function show()
+{
+
+a=userid.value;
+b=password.value;
+c=email.value;
+d=add.value;
+e=contact.value;
+f=date.value;
+g=country.value;
+h=rel.value;
+
+final="<table border='2'>"
+final+="<tr><td>User ID<td>"+a
+final+="<tr><td>Password<td>"+b
+final+="<tr><td>Email ID<td>"+c
+final+="<tr><td>Address<td>"+d
+final+="<tr><td>Contact<td>"+e
+final+="<tr><td>Date<td>"+f
+final+="<tr><td>Country<td>"+g
+final+="<tr><td>Religion<td>"+h
+
+p1.innerHTML=final;
+}
+</script>
